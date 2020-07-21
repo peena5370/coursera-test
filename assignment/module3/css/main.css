@@ -1,6 +1,129 @@
+/* 
+    create by peena5370 at 21/7/2020.
+*/
 body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
-  font-family: 'Oxygen', sans-serif;
+    font-size: 16px; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+#navbar-header {
+    background-color: wheat;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+}
+#nav-img {
+    background: url('../images/logo.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #888;
+    margin: 15px 15px 15px 0;
+}
+.navbar-brand {  
+    padding-top: 25px;
+}
+.navbar-brand h1 {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 150px;
+    text-align: center;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+}
+#nav-list {
+    margin: 0;
+}
+#nav-list a {
+    color: #000;
+    text-align: center;
+    border-top: 1px solid #000;
+}
+#nav-list a:hover {
+    background: #E7E7E7;
+}
+#nav-list a span {
+    font-size: 12px;
+}
+/* header end */
+
+/* menu */
+#main-content {
+    background-color: #fff;
+}
+#menu-title {
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+.content {
+    background-color: #e8e8e8;
+    border: 1px solid #000;
+    position: relative;	
+    margin: 15px;
+}
+h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px;
+}
+/* menu end */
+
+/* footer */
+#end-footer {
+    margin: 0;
+    font-weight: bold;
+}
+/* footer end */
+
+/********** desktop mode **********/
+@media (min-width: 768px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+} 
+
+/********** tablet mode **********/
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbar-brand {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        font-size: 5vw;
+        line-height: 20px;
+    }  
+} 
+
+/********** mobile mode **********/
+@media (max-width: 575px) {
+    .navbar-brand {
+        height: 80px;
+    }
+    .navbar-brand h1 {
+        font-size: 5vw;
+        line-height: 10px;
+    }
+    #collapsable-nav a span {
+        font-size: 1.2em;
+        margin-right: 5px;
+    }
 }
